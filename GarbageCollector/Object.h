@@ -1,5 +1,6 @@
 #pragma once
 #include <set>
+#include "Reflection.h"
 
 class UObject
 {
@@ -12,6 +13,10 @@ public:
 	UObject();
 
 	~UObject();
+
+	static Reflection Reflection;
+	int Dummy_01;
+	int Dummy_02;
 
 	void SetParent(UObject* Parent);
 
